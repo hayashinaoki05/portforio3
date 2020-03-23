@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function () {
+            var offset = 100;
+            var duration = 500;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.pagetop').fadeIn(duration);
+                } else {
+                    jQuery('.pagetop').fadeOut(duration);
+                }
+            });
+
+            jQuery('.pagetop').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+        });
+    </script>
+
+</head>
+
+<header>
+    <title>NAO's PORTFORIO</title>
+    <h1 class="gazou1">
+        <img src="img/clw9Te7r46zjigK1579961343_1579962361.jpg">
+        <span class="pk">Hayashi Naoki's portfolio</span>
+        <span class="pt">Web Engineer</span>
+    </h1>
+    <div class="fixed">
+        <ul>
+            <li>
+                <div class="flex">
+                <img src="img/人物のアイコン素材 その3 (1).png">
+            
+            
+                <span>PROFILE</span>
+            </div>
+            </li>
+            <li>
+                <div class="flex">
+                <img src="img/デスクワークの無料アイコン2.png">
+            
+                <span>SKILL</span>
+            </div>
+            </li>
+            <li>
+                <div class="flex">
+                <img src="img/ノートパソコンのアイコン素材3.png">
+            
+                
+                <span>WORKS</span>
+            </div>
+            </li>
+            <li>
+                <div class="flex">
+                
+                <img src="img/メールの無料アイコンその8.png">
+            
+                <span>CONTACT</span>
+            </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <h2 class="logo2">
+        <img src="img/人物のアイコン素材 その3 (1).png">
+        <span>PROFILE</span>
+    </h2>
+
+    <div class="profile">
+        <img src="img/GmsciIGxJ12uK3U1580469770_1580469812.png">
+        <span>　初めまして。林　直樹（はやし　なおき）と申します。20歳で大学生をしています。パソコンに触れることが大好きで、毎日プログラミングの勉強をしています。
+            私には、ヒーローになりたいという夢があります。
+            <br>弱者を守りたい、努力している人を応援したい、そのための
+        力が欲しい。そう思いながら努力を続けています。<br>その努力の結果、私の長所である「主体的に動く」、「自己解決能力が高い」を最大限に活かし、かつ社会としても非常に需要の高いプログラミングという仕事に出会いました。そんな自分を雇って見ませんか？
+            お仕事いつでも募集しております。
+            
+            　　
+            </span>
+    </div>
+
+    <h2 class="logo2">
+        <img src="img/デスクワークの無料アイコン2.png">
+        <span>SKILL</span>
+    </h2>
+    <div class="desk-skill">
+        <div class="naooo">
+            <h3 class="logo2">
+                <img src="img/プログラムアイコン.png">
+                <span>デザイン・コーディング</span>
+            </h3>
+        </div>
+        <div class="ababa">
+            <span>基本的なことは一通りできます。</span>
+        </div>
+        <table>
+            <tr>
+                <th>技術</th>
+                <th class="haba">経験年数</th>
+                <th class="haba">スキル</th>
+            </tr>
+            <tr>
+                <th>HTML5</th>
+                <th class="haba">1年</th>
+                <th class="haba"><form>
+                    <div class="rating">
+                      <input id="rating1" type="radio" name="rating" value="1" >
+                      <label for="rating1">★</label>
+                      <input id="rating2" type="radio" name="rating" value="2">
+                      <label for="rating2">★</label>
+                      <input id="rating3" type="radio" name="rating" value="3" checked >
+                      <label for="rating3">★</label>
+                      <input id="rating4" type="radio" name="rating" value="4">
+                      <label for="rating4">★</label>
+                      <input id="rating5" type="radio" name="rating" value="5">
+                      <label for="rating5">★</label>
+                    </div>
+                  </form>
+                  
+                  
+                  
+                  </th>
+            </tr>
+            <tr>
+                <th>CSS3</th>
+                <th class="haba">1年</th>
+                <th class="haba"><form>
+                    <div class="rating">
+                      <input id="rating1" type="radio" name="rating" value="1">
+                      <label for="rating1">★</label>
+                      <input id="rating2" type="radio" name="rating"　 value="2">
+                      <label for="rating2">★</label>
+                      <input id="rating3" type="radio" name="rating" value="3" checked >
+                      <label for="rating3">★</label>
+                      <input id="rating4" type="radio" name="rating"　 value="4">
+                      <label for="rating4">★</label>
+                      <input id="rating5" type="radio" name="rating"　 value="5">
+                      <label for="rating5">★</label>
+                    </div>
+                  </form>
+                  
+                  
+                  
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <h2 class="logo2">
+        <img src="img/ノートパソコンのアイコン素材3.png">
+        <span>WORKS</span>
+    </h2>
+    <div class="taku">
+        <div class="portfolio4">
+            <img src="img/awOzDZ3MOHgy0Bq1581376025_1581376030 (1).png">
+            <div class="ababa2">
+                <span>ポートフォリオ その１</span>
+            </div>
+            <div class="ababa2">
+                <span>自分自身のポートフォリオです。</span>
+            </div>
+            <div class="ababa2">
+                <span>HTML/CSS/javascript</span>
+            </div>
+            <div class="ababa2">
+                <a href="http://naohaya.sakura.ne.jp/">サイトに飛ぶ
+                </a>
+            </div>
+        </div>
+        <div class="portfolio4">
+            <img src="img/portfolio2.png">
+            <div class="ababa2">
+                <span>ポートフォリオ　その２</span>
+            </div>
+            <div class="ababa2">
+                <span>自分自身のポートフォリオです。</span>
+            </div>
+            <div class="ababa2">
+                <span>HTML/CSS</span>
+            </div>
+            <div class="ababa2">
+                <a href="https://hayashinaoki05.github.io/portforio/">サイトに飛ぶ
+                </a>
+            </div>
+            <div class="saigou">
+            <a href="https://github.com/hayashinaoki05/portforio">git hub</a>
+            </div>
+        </div>
+        <div class="portfolio4">
+            <img src="img/portfolio3.png">
+            <div class="ababa2">
+                <span>ポートフォリオ　その３</span>
+            </div>
+            <div class="ababa2">
+                <span>自分自身のポートフォリオです。</span>
+            </div>
+            <div class="ababa2">
+                <span>HTML/CSS</span>
+            </div>
+            <div class="ababa2">
+                <a href="https://hayashinaoki05.github.io/portforio2/">サイトに飛ぶ
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    <h2 class="logo2">
+        <img src="img/メールの無料アイコンその8.png">
+        <span>CONTACT</span>
+    </h2>
+    <div class="taku">
+        <span>何かありましたらtwitterのDMからどしどしご連絡をください。</span>
+    </div>
+    <div class="taku2">
+        <img src="img/GmsciIGxJ12uK3U1580469770_1580469812.png">
+        <a href="https://twitter.com/home">twitter</a>
+    </div>
+</body>
+<footer>
+    <div class="saigo">
+    Copyright©Naoki Hayashi. All Rights Reserved.
+    </div>
+    <div class="pagetop">↑</div>
+</footer>
+
+</html>
