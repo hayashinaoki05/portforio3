@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
+
+   
+
     <script>
         jQuery(document).ready(function () {
             var offset = 100;
@@ -26,21 +29,90 @@
                 return false;
             })
         });
-    </script>
+
+
+        $(function() {
+  var $win = $(window),
+      $main = $('main'),
+      $nav = $('nav'),
+      navHeight = $nav.outerHeight(),
+      footerHeight = $('footer').outerHeight(),
+      docmentHeight = $(document).height(),
+      navPos = $nav.offset().top,
+      fixedClass = 'is-fixed',
+      hideClass = 'is-hide';
+
+// どうやら、varの重ねがけは、何回もvarと打たなくてもできるようだ。
+
+  $win.on('load scroll', function() {
+    var value = $(this).scrollTop(),
+        scrollPos = $win.height() + value;
+
+    if ( value > navPos ) {
+      if ( docmentHeight - scrollPos <= footerHeight ) {
+        $nav.addClass(hideClass);
+      } else {
+        $nav.removeClass(hideClass);
+      }
+      $nav.addClass(fixedClass);
+      $main.css('margin-top', navHeight);
+    } else {
+      $nav.removeClass(fixedClass);
+      $main.css('margin-top', '0');
+    }
+  });
+});
+
+
+$(function(){
+
+  $(window).scroll(function (){
+
+    $("#sample").each(function(){
+
+      var imgPos = $(this).offset().top;
+
+      var scroll = $(window).scrollTop();
+
+      var windowHeight = $(window).height();
+      
+ if (scroll > imgPos - windowHeight + windowHeight/5){
+
+        $(this).addClass("fade_on");
+
+      } else {
+
+        $(this).removeClass("fade_on");
+
+      }
+
+    });
+
+  });
+
+});
+
+
+
+    　　　</script>
+
+   
 
 </head>
 
+<div class="fade-in">
 <header>
     <title>NAO's PORTFORIO</title>
-    <h1 class="gazou1">
+    <h1 id="gazou1">
         <img src="img/clw9Te7r46zjigK1579961343_1579962361.jpg">
         <span class="pk">Hayashi Naoki's portfolio</span>
         <span class="pt">Web Engineer</span>
     </h1>
-    <div class="fixed">
+    <nav id="gloval-nav">
+    <div id="fixed">
         <ul>
             <li>
-                <div class="flex">
+                <div id="flex">
                 <img src="img/人物のアイコン素材 その3 (1).png">
             
             
@@ -48,14 +120,14 @@
             </div>
             </li>
             <li>
-                <div class="flex">
+                <div id="flex">
                 <img src="img/デスクワークの無料アイコン2.png">
             
                 <span>SKILL</span>
             </div>
             </li>
             <li>
-                <div class="flex">
+                <div id="flex">
                 <img src="img/ノートパソコンのアイコン素材3.png">
             
                 
@@ -63,7 +135,7 @@
             </div>
             </li>
             <li>
-                <div class="flex">
+                <div id="flex">
                 
                 <img src="img/メールの無料アイコンその8.png">
             
@@ -72,9 +144,13 @@
             </li>
         </ul>
     </div>
+    </nav>
+
 </header>
 
+
 <body>
+    
     <h2 class="logo2">
         <img src="img/人物のアイコン素材 その3 (1).png">
         <span>PROFILE</span>
@@ -91,6 +167,7 @@
             　　
             </span>
     </div>
+
 
     <h2 class="logo2">
         <img src="img/デスクワークの無料アイコン2.png">
@@ -158,7 +235,9 @@
             </tr>
         </table>
     </div>
+  
 
+ 
     <h2 class="logo2">
         <img src="img/ノートパソコンのアイコン素材3.png">
         <span>WORKS</span>
@@ -222,6 +301,9 @@
                 </div>
         </div>
     </div>
+    
+
+   
     <h2 class="logo2">
         <img src="img/メールの無料アイコンその8.png">
         <span>CONTACT</span>
@@ -233,12 +315,16 @@
         <img src="img/GmsciIGxJ12uK3U1580469770_1580469812.png">
         <a href="https://twitter.com/home">twitter</a>
     </div>
+    
+   
 </body>
+</div>
 <footer>
     <div class="saigo">
     Copyright©Naoki Hayashi. All Rights Reserved.
     </div>
     <div class="pagetop">↑</div>
 </footer>
+
 
 </html>
