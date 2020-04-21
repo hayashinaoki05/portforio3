@@ -1,4 +1,17 @@
- body{
+#opening{
+    display:flex;
+    position: absolute;
+    z-index:2;
+    width:100%;
+    height:850px;
+    /* ボックスの大きさを指定 */
+}
+
+#opening span{
+    left:50%;
+    height:50%;
+}
+body{
      margin:0px;
      vertical-align: bottom;
      background-color:#EEEEEE;
@@ -64,8 +77,7 @@
   }
 
   #fixed img{
-      width:48px;
-      height:48px;
+      width:20%;
       margin-right:10px;
   }
 
@@ -140,11 +152,12 @@ h2{
     width:500px;
     height:240px;
     margin-left:50px;
+    margin-bottom:40px;
 }
 
 .desk-skill{
     background-color:white;
-    width:1000px;
+    width:70%;
     margin-left:auto;
     margin-right:auto;
     padding-bottom:5%;
@@ -158,9 +171,13 @@ h2{
 .ababa{
     display:flex;
     justify-content: center;
+    margin-bottom:5%;
 }
 
-
+.ababa2{
+    display:flex;
+    justify-content: center;
+}
 
 table{
     width:100%;
@@ -292,4 +309,49 @@ footer{
     /* .boxが「my-fade-in」で状態変化するように指定 */
     animation-name:     my-fade-in;
     animation-duration: 3s;
+  }
+
+  @media(max-width: 1306px){
+      .pk{
+          font-size:2.5rem;
+      }
+
+      #flex{
+          font-size:60%;
+      }
+      .taku{
+        flex-direction: wrap;
+        /* flex-direction:子要素を折り返しにする。 */
+        /* row（初期値）… 子要素を左から右に配置 */
+      }
+  }
+
+  @media(max-width: 890px){
+      .pk{
+          font-size:1.5rem;
+      }
+      .logo2{
+          font-size:1.8rem;
+      }
+      .logo2 img{
+          width:35px;
+          margin-right: 10px;
+      }
+      .desk-skill{
+          margin:0px;
+          width:100%;
+      }
+  }
+
+  @media(max-width:650px){
+      #flex{
+          font-size:44%;
+      }
+      .logo2 img{
+        width:25px;
+        margin-right: 10px;
+    }
+    th.haba{
+        width:20%;
+    }
   }
