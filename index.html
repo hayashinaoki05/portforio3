@@ -93,6 +93,11 @@ $(function(){
 
 });
 
+window.onload = function() {
+  const spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
+}
+
 
 
     　　　</script>
@@ -101,6 +106,9 @@ $(function(){
 
 </head>
 
+<div id="loading">
+    <div class="dot"></div>
+</div>
 <div class="fade-in">
 <header>
     <title>NAO's PORTFORIO</title>

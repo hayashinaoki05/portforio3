@@ -311,6 +311,45 @@ footer{
     animation-duration: 3s;
   }
 
+    /* ローディング画面 */
+#loading {
+    width: 100vw;
+    height: 100vh;
+    /* vw,vh:サイト上全体の大きさのパーセントを正確に表している。 */
+    transition: all 1s;
+    /* 画面がloadedに切り替わるまでの時間を設定 */
+    background-color: #0bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+  /* ローディング終了画面 */
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+    /* 表示　非表示を決定する。 */
+  }
+
+  .dot {
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+  }
+  /* ローディングアニメーション */
+  @keyframes sk-scaleout {
+    0% {
+      transform: scale(0);
+    } 100% {
+      transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+
   @media(max-width: 1306px){
       .pk{
           font-size:2.5rem;
@@ -328,7 +367,7 @@ footer{
 
   @media(max-width: 890px){
       .pk{
-          font-size:1.5rem;
+          font-size:2.2rem;
       }
       .logo2{
           font-size:1.8rem;
@@ -341,6 +380,17 @@ footer{
           margin:0px;
           width:100%;
       }
+
+      .taku{
+        flex-wrap: wrap;
+      }
+
+      .portfolio4{
+          width:322px;
+          margin-bottom: 40px;
+      }
+
+
   }
 
   @media(max-width:650px){
@@ -355,3 +405,71 @@ footer{
         width:20%;
     }
   }
+
+  @media(max-width:414px){
+
+    .pk{
+        font-size:1.0rem;
+    }
+    #fixed ul{
+       padding-left:0px;
+    }
+
+    #fixed li{
+       width:64px;
+       height:40.09px;
+    }
+
+      .pt{
+       font-size:45%;
+       padding-bottom:25px;
+      }
+
+     #flex{
+      display:block;
+      text-align: center;
+     }
+
+     #flex img{
+      font-size:50%;
+     }
+
+     .profile{
+         flex-direction: column;
+         /* ボックスを縦方向に揃える。 */
+
+         align-items: center;
+     }
+
+     .profile span{
+         width:414px;
+         margin-left: 0px;
+         margin-bottom:0px;
+     }
+
+     .profile img{
+         width:23%;
+         padding-bottom:50px;
+     }
+
+     .rating{
+         font-size:20px;
+     }
+
+     .taku{
+         display:block;
+     }
+     
+     .portfolio4{
+         display:flex;
+         justify-content:center;
+         flex-direction: column;
+         align-items: center;
+         width:90%;
+         height:100%;
+         margin-bottom: 50px;
+     }
+
+
+  }
+
