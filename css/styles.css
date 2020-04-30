@@ -110,7 +110,7 @@ ul{
     /* ulの点をなくす */
 }
 ul li{
-    padding:0 20px;
+    padding:0 24px;
 }
 
 ul span{
@@ -442,7 +442,7 @@ footer{
      }
 
      .profile span{
-         width:414px;
+         width:360px;
          margin-left: 0px;
          margin-bottom:0px;
      }
@@ -453,7 +453,7 @@ footer{
      }
 
      .rating{
-         font-size:20px;
+         font-size:18px;
      }
 
      .taku{
