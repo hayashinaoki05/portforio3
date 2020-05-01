@@ -393,7 +393,22 @@ footer{
 
   }
 
+  @media(max-width:710px){
+      .pt{
+          font-size:55%;
+      }
+
+       .pk{
+           font-size:1.8rem;
+       }
+  }
+
   @media(max-width:650px){
+
+       .pk{
+           font-size:1.5rem;
+       }
+
       #flex{
           font-size:44%;
       }
@@ -403,6 +418,10 @@ footer{
     }
     th.haba{
         width:20%;
+    }
+
+    ul li{
+        padding:0px 15px;
     }
   }
 
@@ -468,6 +487,10 @@ footer{
          width:90%;
          height:100%;
          margin-bottom: 50px;
+     }
+
+     ul li{
+        padding:0px 25px;
      }
 
 
