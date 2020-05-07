@@ -99,6 +99,20 @@ window.onload = function() {
 }
 
 
+$(function(){
+    // hrefの先に関数を入れると、そこにスクロールされるようになる。
+  $('a[href^="#"]').click(function(){
+    //   speedは数値が大きくなればなるほど遅くなる。
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+
+
 
     　　　</script>
 
@@ -121,34 +135,42 @@ window.onload = function() {
     <div id="fixed">
         <ul>
             <li>
+                
                 <div id="flex">
+                <a href="#1">
                 <img src="img/人物のアイコン素材 その3 (1).png">
             
             
                 <span>PROFILE</span>
             </div>
+            </a>
             </li>
             <li>
                 <div id="flex">
+                    <a href="#2">
                 <img src="img/デスクワークの無料アイコン2.png">
             
                 <span>SKILL</span>
+            </a>
             </div>
             </li>
             <li>
                 <div id="flex">
+                    <a href="#3">
                 <img src="img/ノートパソコンのアイコン素材3.png">
             
                 
                 <span>WORKS</span>
+            </a>
             </div>
             </li>
             <li>
                 <div id="flex">
-                
+                    <a href="#4">
                 <img src="img/メールの無料アイコンその8.png">
             
                 <span>CONTACT</span>
+            </a>
             </div>
             </li>
         </ul>
@@ -159,7 +181,7 @@ window.onload = function() {
 
 
 <body>
-    
+    <div id="1">
     <h2 class="logo2">
         <img src="img/人物のアイコン素材 その3 (1).png">
         <span>PROFILE</span>
@@ -176,8 +198,9 @@ window.onload = function() {
             　　
             </span>
     </div>
+</div>
 
-
+    <div id="2">
     <h2 class="logo2">
         <img src="img/デスクワークの無料アイコン2.png">
         <span>SKILL</span>
@@ -292,9 +315,10 @@ window.onload = function() {
             </tr>
         </table>
     </div>
+</div>
   
 
- 
+    <div id="3">
     <h2 class="logo2">
         <img src="img/ノートパソコンのアイコン素材3.png">
         <span>WORKS</span>
@@ -358,9 +382,10 @@ window.onload = function() {
                 </div>
         </div>
     </div>
+</div>
     
 
-   
+    <div id="4">
     <h2 class="logo2">
         <img src="img/メールの無料アイコンその8.png">
         <span>CONTACT</span>
@@ -371,6 +396,7 @@ window.onload = function() {
     <div class="taku2">
         <img src="img/GmsciIGxJ12uK3U1580469770_1580469812.png">
         <a href="https://twitter.com/home">twitter</a>
+    </div>
     </div>
     
    

@@ -85,6 +85,16 @@ body{
       display:inline-block;
   }
 
+  #flex a{
+      color:black;
+      /* aタグの下線を消している。 */
+      text-decoration: none;
+  }
+
+  #flex a:hover{
+      color:hsl(180, 1%, 37%);
+  }
+
  .pk{
     top:50%;
     font-size: 2em;
@@ -230,6 +240,19 @@ th.haba{
     justify-content: center;
     margin-bottom:5%;
 }
+/* aの横についているやつについて */
+/* a:link:未訪問のリンク */
+/* a:visited:訪問済のリンク */
+/* a:hover:マウスカーソルがあたっているリンク */
+/* a:active:マウスクリック中のリンク */
+.ababa2 a:link, a:visited {
+    color: #33a5cb;
+    text-decoration: none;
+  }
+
+  .ababa2   a:hover {
+    color: hsl(196, 18%, 63%);
+  }
 
 .taku{
     display:flex;
@@ -245,6 +268,11 @@ th.haba{
 
 .taku2 a{
     margin-left:25%;
+    text-decoration: none;
+}
+
+.taku2 a:hover{
+    color: hsl(196, 18%, 63%);
 }
 
 .pagetop {
@@ -293,6 +321,11 @@ footer{
     justify-content:center;
     font-size:small;
     margin-top:15%;
+    text-decoration: none;
+}
+
+.saigou a:hover{
+    color: hsl(196, 18%, 63%);
 }
 
 /* スタイルの状態変化を「my-fade-in」という名前で定義 */
